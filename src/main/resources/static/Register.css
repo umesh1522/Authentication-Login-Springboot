@@ -1,0 +1,199 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0a2351, #1a4a94);
+  padding: 20px;
+}
+
+/* Login Container */
+.login-container {
+  background-color: white;
+  padding: 20px 40px;
+  border-radius: 0; /* Square shape */
+  box-shadow: 0 15px 30px rgba(0, 0, 50, 0.3);
+  width: 100%;
+  max-width: 700px; /* Increased width */
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #3a6bc5;
+}
+
+.login-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #3a6bc5, #5f9bf1, #3a6bc5);
+}
+
+/* Pet Animation */
+.pet-container {
+  display: flex;
+  justify-content: center;
+  font-size: 50px; /* Reduced size */
+  margin-bottom: 5px; /* Reduced margin */
+  position: relative;
+}
+
+.pet {
+  transition: all 0.3s ease;
+  opacity: 0;
+  position: absolute;
+  transform: scale(0.8);
+}
+
+.pet.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Heading Styles */
+h2 {
+  text-align: center;
+  color: #2a5298;
+  margin-bottom: 10px; /* Reduced margin */
+  font-weight: 600;
+  font-size: 22px; /* Slightly smaller */
+}
+
+/* Form Elements */
+.input-group {
+  margin-bottom: 10px; /* Reduced margin */
+  position: relative;
+}
+
+.ptag {
+  font-size: 13px; /* Smaller text */
+  color: #4a6fa5;
+  margin-bottom: 2px; /* Reduced margin */
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  padding: 8px 12px; /* Reduced padding */
+  border: 1px solid #c3d5f2;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: all 0.3s;
+  background-color: #f5f9ff;
+}
+
+input:focus {
+  border-color: #3a6bc5;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(58, 107, 197, 0.2);
+}
+
+input::placeholder {
+  color: #a3c6ff;
+}
+
+/* Two-column layout for form fields */
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+/* Full width elements */
+form button, form p {
+  grid-column: 1 / -1;
+}
+
+/* Error Messages */
+#msg, #pid, #pwid {
+  color: #e74c3c;
+  font-size: 11px;
+  margin-top: 2px;
+  min-height: 15px;
+}
+
+/* Button Styles */
+button {
+  width: 100%;
+  padding: 10px; /* Reduced padding */
+  background: linear-gradient(90deg, #1e3c72, #2a5298);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #2a5298, #1e3c72);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(26, 74, 148, 0.3);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Link Styles */
+a {
+  color: #2a5298;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+a:hover {
+  color: #1e3c72;
+  text-decoration: underline;
+}
+
+.button-class {
+  background-color: transparent;
+  color: #2a5298;
+  padding: 2px 6px;
+  border-radius: 3px;
+  border: 1px solid #a3c6ff;
+  transition: all 0.3s;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.button-class:hover {
+  background-color: #e6f0ff;
+  text-decoration: none;
+}
+
+form p {
+  text-align: center;
+  margin-top: 6px;
+  color: #4a6fa5;
+  font-size: 13px;
+}
+
+/* Responsive Design */
+@media (max-width: 650px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+  
+  .login-container {
+    max-width: 450px;
+    padding: 20px;
+  }
+}

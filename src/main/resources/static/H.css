@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f0f5ff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Marquee styling */
+marquee {
+  background: #2563eb;
+  color: #fff;
+  padding: 10px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Navigation */
+nav {
+  background: #fff;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(37, 99, 235, 0.1);
+}
+
+.menu {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo a {
+  color: #2563eb;
+  font-size: 28px;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.logo a:hover {
+  text-shadow: 0 0 10px rgba(37, 99, 235, 0.3);
+}
+
+button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #1d4ed8;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(37, 99, 235, 0.5);
+}
+
+/* Sections */
+section {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.1);
+}
+
+h2 {
+  color: #2563eb;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.2em;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: #2563eb;
+}
+
+/* About Us Cards */
+.card-box {
+  background: #f8faff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border-left: 4px solid #2563eb;
+}
+
+.card-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.1);
+}
+
+.card-content {
+  padding: 25px;
+}
+
+.card-content h3 {
+  color: #2563eb;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.card-content h3 i {
+  margin-right: 10px;
+}
+
+/* Security Info Cards */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #f8faff;
+  padding: 25px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  border-left: 4px solid #2563eb;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.1);
+  border-left: 4px solid #1d4ed8;
+}
+
+.card h3 {
+  color: #2563eb;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+  display: flex;
+  align-items: center;
+}
+
+.card h3 i {
+  margin-right: 10px;
+}
+
+/* CARDBOARD FLIP EFFECT */
+.cardboard-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.cardboard {
+  background-color: transparent;
+  perspective: 1000px;
+  height: 300px;
+}
+
+.cardboard-front, .cardboard-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.8s;
+}
+
+.cardboard-front {
+  background: #f8faff;
+  transform: rotateY(0deg);
+  border-top: 4px solid #2563eb;
+}
+
+.cardboard-back {
+  background: #f8faff;
+  transform: rotateY(180deg);
+  border-bottom: 4px solid #2563eb;
+  justify-content: space-between;
+}
+
+.cardboard:hover .cardboard-front {
+  transform: rotateY(180deg);
+}
+
+.cardboard:hover .cardboard-back {
+  transform: rotateY(360deg);
+}
+
+/* Team Cards */
+.cardboard-front img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #2563eb;
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-icons a {
+  color: #333;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  background: rgba(37, 99, 235, 0.1);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons a:hover {
+  color: #2563eb;
+  background: rgba(37, 99, 235, 0.2);
+  transform: translateY(-5px);
+}
+
+/* Service Cards */
+.service-front {
+  background: linear-gradient(45deg, #f0f5ff, #e6f0ff);
+}
+
+.service-front i {
+  font-size: 50px;
+  color: #2563eb;
+  margin-bottom: 20px;
+}
+
+.learn-more {
+  color: #2563eb;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.learn-more:hover {
+  gap: 15px;
+  color: #1d4ed8;
+}
+
+/* Stats Cards */
+.stats-card {
+  height: 200px;
+}
+
+.stat-front {
+  background: linear-gradient(135deg, #f0f5ff, #e6f0ff);
+}
+
+.stat-front h3 {
+  font-size: 2.8em;
+  color: #2563eb;
+  margin-bottom: 5px;
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+  height: 250px;
+}
+
+.testimonial-front {
+  background: linear-gradient(135deg, #f0f5ff, #e6f0ff);
+}
+
+.testimonial-front img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #2563eb;
+  margin-bottom: 15px;
+}
+
+.rating {
+  color: #2563eb;
+  margin-top: 15px;
+}
+
+/* FAQ Section */
+.faq-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 20px;
+}
+
+.faq-card {
+  background: #f8faff;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.1);
+}
+
+.faq details {
+  background: transparent;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.faq summary {
+  padding: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #2563eb;
+  position: relative;
+  background: linear-gradient(to right, transparent, rgba(37, 99, 235, 0.05));
+  border-left: 4px solid #2563eb;
+  transition: all 0.3s ease;
+}
+
+.faq summary:hover {
+  background: linear-gradient(to right, transparent, rgba(37, 99, 235, 0.1));
+}
+
+.faq-content {
+  padding: 0 20px 20px;
+}
+
+/* Contact Us Section */
+.contact-card {
+  background: #f8faff;
+  border-radius: 10px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+.contact-info {
+  padding: 30px;
+  background: linear-gradient(135deg, #f0f5ff, #e6f0ff);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-method {
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.contact-method:hover {
+  transform: translateX(10px);
+}
+
+.contact-method i {
+  font-size: 30px;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.contact-method h3 {
+  color: #2563eb;
+  margin-bottom: 5px;
+}
+
+.contact-form {
+  padding: 30px;
+}
+
+.contact-form h3 {
+  color: #2563eb;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-us form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0;
+}
+
+.contact-us input, 
+.contact-us textarea {
+  width: 100%;
+  padding: 12px 15px;
+  background: #f0f5ff;
+  border: 2px solid #e6e6e6;
+  border-radius: 8px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.contact-us input:focus, 
+.contact-us textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.3);
+  outline: none;
+}
+
+.contact-us textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.contact-us button {
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .contact-card {
+    grid-template-columns: 1fr;
+  }
+  
+  .faq-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .cardboard-container,
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .menu {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  section {
+    margin: 40px 10px;
+  }
+  
+  .cardboard {
+    height: 350px;
+  }
+}

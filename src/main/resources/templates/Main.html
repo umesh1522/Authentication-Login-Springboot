@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Main Page</title>
+<script src="logout.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+<link rel="stylesheet" href="H.css">
+</head>
+<body>
+<marquee behavior="scroll" direction="right">Welcome to the Main Page! Join our community for the latest cybersecurity updates and digital solutions</marquee>
+
+<nav>
+<div class="menu">
+<div class="logo">
+<a href="#">USERSECURITY</a>
+</div>
+<ul>
+<button onclick="handleLogout()">Logout</button>
+</ul>
+</div>
+</nav>
+
+<section class="about-us">
+<h2>About Us</h2>
+<div class="card-box">
+  <div class="card-content">
+    <h3><i class="fas fa-shield-alt"></i> Our Mission</h3>
+    <p>AKWORDS is a platform dedicated to knowledge sharing, security awareness, and user safety in the digital world. Our mission is to empower users with secure and seamless experiences online.</p>
+  </div>
+</div>
+
+<div class="card-box">
+  <div class="card-content">
+    <h3><i class="fas fa-history"></i> Our History</h3>
+    <p>Founded in 2020, we've helped over 50,000 users protect their digital identity and enhance their online security practices. We continue to evolve our services as digital threats become more sophisticated.</p>
+  </div>
+</div>
+
+<div class="card-box">
+  <div class="card-content">
+    <h3><i class="fas fa-bullseye"></i> Our Values</h3>
+    <p>We believe in transparency, integrity, and user empowerment. Every feature we develop focuses on balancing strong security with exceptional user experience.</p>
+  </div>
+</div>
+</section>
+
+<section class="security-info">
+<h2>User Security & Login Information</h2>
+<div class="card-container">
+<div class="card">
+<h3><i class="fas fa-lock"></i> Secure Login</h3>
+<p>We use 256-bit encrypted authentication to keep your data safe. Our security protocols are updated regularly to stay ahead of potential threats and vulnerabilities.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-key"></i> Password Recovery</h3>
+<p>Forgot your password? Easily recover it securely through our multi-step verification process. We'll send a unique recovery link to your registered email address.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-shield-alt"></i> Two-Factor Authentication</h3>
+<p>Enhance your security with two-factor authentication. Connect your mobile device to receive one-time passwords for each login attempt, providing an extra layer of protection.</p>
+</div>
+</div>
+</section>
+
+<!-- Team Section with Cardboards -->
+<section class="team-section">
+<h2>Our Team</h2>
+<p>Meet the experts behind AKWORDS who work tirelessly to enhance your digital security</p>
+<div class="cardboard-container">
+  <div class="cardboard">
+    <div class="cardboard-front">
+      <img src="/api/placeholder/120/120" alt="Team Member">
+      <h3>Alex Johnson</h3>
+      <p>Chief Security Officer</p>
+    </div>
+    <div class="cardboard-back">
+      <h3>Alex Johnson</h3>
+      <p>Former cybersecurity expert with 15+ years of experience at major tech companies. Specializes in threat detection and prevention.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="cardboard">
+    <div class="cardboard-front">
+      <img src="/api/placeholder/120/120" alt="Team Member">
+      <h3>Sarah Williams</h3>
+      <p>Lead Developer</p>
+    </div>
+    <div class="cardboard-back">
+      <h3>Sarah Williams</h3>
+      <p>Full-stack developer specializing in secure authentication systems and data encryption. Previously worked on banking security systems.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="cardboard">
+    <div class="cardboard-front">
+      <img src="/api/placeholder/120/120" alt="Team Member">
+      <h3>Michael Chen</h3>
+      <p>UX Designer</p>
+    </div>
+    <div class="cardboard-back">
+      <h3>Michael Chen</h3>
+      <p>Creating intuitive interfaces that balance security requirements with excellent user experiences. Award-winning designer with a focus on accessibility.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-dribbble"></i></a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="cardboard">
+    <div class="cardboard-front">
+      <img src="/api/placeholder/120/120" alt="Team Member">
+      <h3>Elena Petrova</h3>
+      <p>Security Analyst</p>
+    </div>
+    <div class="cardboard-back">
+      <h3>Elena Petrova</h3>
+      <p>Expert in identifying vulnerabilities and implementing robust security protocols. Certified ethical hacker with a background in cybersecurity research.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Services Section with Cardboards -->
+<section class="services-section">
+<h2>Our Services</h2>
+<p>Comprehensive digital security solutions for individuals and businesses</p>
+<div class="cardboard-container">
+  <div class="cardboard">
+    <div class="cardboard-front service-front">
+      <i class="fas fa-laptop-code"></i>
+      <h3>Security Audits</h3>
+    </div>
+    <div class="cardboard-back">
+      <h3>Security Audits</h3>
+      <p>Our team conducts thorough security assessments to identify vulnerabilities in your systems and recommend improvements. We use industry-standard penetration testing and custom tools.</p>
+      <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+  
+  <div class="cardboard">
+    <div class="cardboard-front service-front">
+      <i class="fas fa-user-shield"></i>
+      <h3>Identity Protection</h3>
+    </div>
+    <div class="cardboard-back">
+      <h3>Identity Protection</h3>
+      <p>Advanced tools and techniques to protect your online identity from theft and misuse across platforms. Includes dark web monitoring and alerts for potential breaches.</p>
+      <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+  
+  <div class="cardboard">
+    <div class="cardboard-front service-front">
+      <i class="fas fa-graduation-cap"></i>
+      <h3>Security Training</h3>
+    </div>
+    <div class="cardboard-back">
+      <h3>Security Training</h3>
+      <p>Interactive workshops and courses designed to educate users about best practices in digital security. Custom training programs for organizations of all sizes.</p>
+      <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+  
+  <div class="cardboard">
+    <div class="cardboard-front service-front">
+      <i class="fas fa-lock"></i>
+      <h3>Encryption Services</h3>
+    </div>
+    <div class="cardboard-back">
+      <h3>Encryption Services</h3>
+      <p>End-to-end encryption solutions for sensitive data transmission and storage. We implement military-grade encryption protocols to protect your information.</p>
+      <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Stats Section with Cardboards -->
+<section class="stats-section">
+<h2>AKWORDS Impact</h2>
+<div class="cardboard-container stats-container">
+  <div class="cardboard stats-card">
+    <div class="cardboard-front stat-front">
+      <h3>50K+</h3>
+      <p>Active Users</p>
+    </div>
+    <div class="cardboard-back">
+      <h3>50K+ Active Users</h3>
+      <p>Our community continues to grow as more people recognize the importance of digital security. Join our trusted network today!</p>
+    </div>
+  </div>
+  
+  <div class="cardboard stats-card">
+    <div class="cardboard-front stat-front">
+      <h3>99.9%</h3>
+      <p>Uptime</p>
+    </div>
+    <div class="cardboard-back">
+      <h3>99.9% Uptime</h3>
+      <p>We ensure our services are available when you need them most, with redundant systems and continuous monitoring.</p>
+    </div>
+  </div>
+  
+  <div class="cardboard stats-card">
+    <div class="cardboard-front stat-front">
+      <h3>5000+</h3>
+      <p>Security Threats Prevented</p>
+    </div>
+    <div class="cardboard-back">
+      <h3>5000+ Threats Prevented</h3>
+      <p>Our advanced security systems have successfully identified and neutralized thousands of potential threats to our users.</p>
+    </div>
+  </div>
+  
+  <div class="cardboard stats-card">
+    <div class="cardboard-front stat-front">
+      <h3>24/7</h3>
+      <p>Support Available</p>
+    </div>
+    <div class="cardboard-back">
+      <h3>24/7 Support</h3>
+      <p>Our dedicated support team is available around the clock to assist with any security concerns or technical issues you may encounter.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Testimonials with Cardboards -->
+<section class="testimonials">
+<h2>What Our Users Say</h2>
+<div class="cardboard-container">
+  <div class="cardboard testimonial-card">
+    <div class="cardboard-front testimonial-front">
+      <img src="/api/placeholder/50/50" alt="User">
+      <h4>James Wilson</h4>
+      <small>Software Engineer</small>
+    </div>
+    <div class="cardboard-back">
+      <p>"AKWORDS has completely transformed how I approach online security. Their two-factor authentication system is seamless and gives me peace of mind. I recommend it to all my colleagues."</p>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+    </div>
+  </div>
+  
+  <div class="cardboard testimonial-card">
+    <div class="cardboard-front testimonial-front">
+      <img src="/api/placeholder/50/50" alt="User">
+      <h4>Emma Rodriguez</h4>
+      <small>Digital Marketer</small>
+    </div>
+    <div class="cardboard-back">
+      <p>"After experiencing a security breach last year, I switched to AKWORDS. Their recovery system helped me regain access quickly and securely. Now I feel confident my data is protected."</p>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+    </div>
+  </div>
+  
+  <div class="cardboard testimonial-card">
+    <div class="cardboard-front testimonial-front">
+      <img src="/api/placeholder/50/50" alt="User">
+      <h4>David Kim</h4>
+      <small>Small Business Owner</small>
+    </div>
+    <div class="cardboard-back">
+      <p>"As a small business owner, I needed affordable but robust security solutions. AKWORDS provided exactly what I needed at a price point that works. Their customer service is exceptional."</p>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- FAQ with Card Styling -->
+<section class="faq">
+<h2>Frequently Asked Questions</h2>
+<div class="faq-container">
+  <div class="faq-card">
+    <details>
+      <summary>How do I create an account?</summary>
+      <div class="faq-content">
+        <p>Click on Sign Up and fill in the required details to create an account. You'll need to verify your email address to complete the registration process.</p>
+      </div>
+    </details>
+  </div>
+  
+  <div class="faq-card">
+    <details>
+      <summary>What if I forget my password?</summary>
+      <div class="faq-content">
+        <p>Use the Forgot Password option on the login page to reset your password. We'll send a secure link to your registered email address.</p>
+      </div>
+    </details>
+  </div>
+  
+  <div class="faq-card">
+    <details>
+      <summary>Is my data secure?</summary>
+      <div class="faq-content">
+        <p>Yes! We follow industry best practices to ensure your data remains safe. All sensitive information is encrypted and we regularly update our security protocols.</p>
+      </div>
+    </details>
+  </div>
+  
+  <div class="faq-card">
+    <details>
+      <summary>How does two-factor authentication work?</summary>
+      <div class="faq-content">
+        <p>Two-factor authentication adds an extra layer of security by requiring something you know (password) and something you have (usually your mobile device). After entering your password, you'll receive a time-sensitive code to complete login.</p>
+      </div>
+    </details>
+  </div>
+  
+  <div class="faq-card">
+    <details>
+      <summary>Can I use AKWORDS on multiple devices?</summary>
+      <div class="faq-content">
+        <p>Yes, you can access your AKWORDS account securely from multiple devices. Our system keeps track of all login attempts and will notify you of any suspicious activity.</p>
+      </div>
+    </details>
+  </div>
+</div>
+</section>
+
+<section class="contact-us">
+<h2>Contact Us</h2>
+<div class="contact-card">
+  <div class="contact-info">
+    <div class="contact-method">
+      <i class="fas fa-envelope"></i>
+      <h3>Email Us</h3>
+      <p>support@UK.com</p>
+    </div>
+    <div class="contact-method">
+      <i class="fas fa-phone-alt"></i>
+      <h3>Call Us</h3>
+      <p>+21 (555) 123-4567</p>
+    </div>
+    <div class="contact-method">
+      <i class="fas fa-map-marker-alt"></i>
+      <h3>Visit Us</h3>
+      <p>123 Security Ave, Cybertown, CT 12345</p>
+    </div>
+  </div>
+  
+  <div class="contact-form">
+    <h3>Send a Message</h3>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</div>
+</section>
+
+<footer>
+<p>&copy; 2025 UK. All rights reserved. | <a href="#" style="color: #0ef; text-decoration: none;">Privacy Policy</a> | <a href="#" style="color: #0ef; text-decoration: none;">Terms of Service</a></p>
+</footer>
+</body>
+</html>
